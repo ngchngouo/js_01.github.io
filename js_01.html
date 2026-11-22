@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính lãi suất ngân hàng</title>
+</head>
+<body>
+     <h2>TÍNH LÃI SUẤT NGÂN HÀNG</h2>
+
+    <script>
+        let P = Number(prompt("Nhập số tiền vay (triệu đồng):"));
+        let r = Number(prompt("Nhập lãi suất (%/năm):"));
+        let n = Number(prompt("Nhập số năm vay:"));
+
+        /!--Lãi đơn--/
+        let tienLai = P * r / 100 * n;
+
+        /!--Tính tổng tiền phải trả--/
+        let tongTien = P + tienLai;
+
+        document.write("Số tiền vay: " + P + " triệu đồng<br>");
+        document.write("Lãi suất: " + r + "%/năm<br>");
+        document.write("Số năm vay: " + n + "<br>");
+        document.write("Tiền lãi: " + tienLai + " triệu đồng<br>");
+        document.write("<b>Tổng tiền phải trả: "
+            + tongTien + " triệu đồng</b>");
+    </script>
+
+</body>
+</html>
